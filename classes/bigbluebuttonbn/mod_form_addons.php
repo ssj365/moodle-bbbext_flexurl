@@ -35,7 +35,7 @@ class mod_form_addons extends \mod_bigbluebuttonbn\local\extension\mod_form_addo
      * @param stdClass|null $bigbluebuttonbndata
      * @param string|null $suffix
      */
-    public function __construct(\MoodleQuickForm &$mform, ?stdClass $bigbluebuttonbndata = null, string $suffix = null) {
+    public function __construct(\MoodleQuickForm &$mform, ?stdClass $bigbluebuttonbndata = null, ?string $suffix = null) {
         parent::__construct($mform, $bigbluebuttonbndata, $suffix);
         // Supplement BBB data with additional information.
         if (!empty($bigbluebuttonbndata->id)) {
